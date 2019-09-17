@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"
+		/>
+		<link rel="icon" type="image/x-icon" href="icon/favicon.png" />
+		<title>3D Design PRO</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<ion-app>
+			<ion-header>
+				<ion-toolbar>
+					<ion-buttons slot="start">
+						<ion-button href="https://3d-design-pro.com">
+							<ion-icon slot="start" name="arrow-round-back"></ion-icon>
+						</ion-button>
+					</ion-buttons>
+					<ion-title>3D Printer</ion-title>
+				</ion-toolbar>
+			</ion-header>
+
+			<ion-content>
+				<object data="printer.html"></object>
+			</ion-content>
+
+			<script src="app.js"></script>
+		</ion-app>
+	</body>
+</html>
