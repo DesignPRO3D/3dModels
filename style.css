@@ -2,3 +2,7 @@ ion-toolbar {
 	--background: #28adf6 !important;
 	--color: #000000;
 }
+
+h3 {
+	font-weight: bold !important;
+}
