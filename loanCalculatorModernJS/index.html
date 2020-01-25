@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loan Calculator</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style>
+    #loading {
+      display: block;
+      margin: auto;
+      height: 80px;
+      width: 80px;
+    }
+    #results .input-group>.input-group-prepend {
+      flex: 0 0 20%;
+    }
+    #results .input-group .input-group-text {
+      width: 150px;
+    }
+    #loading, #results {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-info">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a href="../index.html"><i class="fa fa-chevron-left"></i></a>
+    <h7 class="navbar-brand mx-auto navbar-brand">Modern JS S4: DOM Project 02</h7>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card card-body text-center mt-5">
+          <h3 class="heading display-5 pb-3">Loan Calculator</h3>
+          <form id="loan-form">
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">&#163;</span>
+              </div>
+              <input type="number" class="form-control" name="amount" id="amount" placeholder="Loan Amount" aria-label="amount" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">%</span>
+              </div>
+              <input type="number" class="form-control" name="interest" id="interest" placeholder="Interest" aria-label="interest" aria-describedby="basic-addon2">
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" name="years" id="years" placeholder="Years to Repay">
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+            </div>
+
+          </form>
+          <!-- LOADER HERE -->
+          <img src="img/loading.gif" id="loading" alt="loader">
+          <!-- RESULTS -->
+          <div id="results" class="pt-4">
+            <h5>Results</h5>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text text-right" id="basic-addon13">Monthly Payment</span>
+              </div>
+              <input type="number" class="form-control" name="monthly-payment" id="monthly-payment" disabled aria-label="monthly-payment" aria-describedby="basic-addon13">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon14">Total Payment</span>
+              </div>
+              <input type="number" class="form-control" name="total-payment" id="total-payment" disabled aria-label="total-payment" aria-describedby="basic-addon14">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon15">Total Interest</span>
+              </div>
+              <input type="number" class="form-control" name="total-interest" id="total-interest" disabled aria-label="total-interest" aria-describedby="basic-addon15">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>
