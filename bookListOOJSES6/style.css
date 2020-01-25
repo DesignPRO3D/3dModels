@@ -1,0 +1,22 @@
+ion-header a {
+  text-decoration: none !important;
+  color: beige !important;
+}
+
+.success, .error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+  background: green;
+}
+
+.error {
+  background: tomato;
+}
+
+a {
+  text-decoration: none;
+}

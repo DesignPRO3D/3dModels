@@ -4,8 +4,6 @@ let max = 100;
 let winningNum = getRandomNum(max);
 let guessesNum = 0;
 
-console.log(winningNum);
-
 // UI Elements
 const game = document.querySelector('#game');
 const minNum = document.querySelector('.min-num');
@@ -68,6 +66,7 @@ resetBtn.addEventListener('click', function() {
   guessInput.disabled = false;
   guessInput.value = null;
   scoreTable.textContent = '';
+  winningNum = getRandomNum(max);
 });
 
 //Get winning number
