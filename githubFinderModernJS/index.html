@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Github Finder</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-success navbar-success">
+    <a href="../index.html"><i class="fa fa-chevron-left"></i></a>
+    <h7 class="navbar-brand mx-auto navbar-brand">Modern JS S8: Asynchronous JS</h7>
+  </nav>
+
+  <div class="container search-container mt-3">
+    <div class="search card card-body">
+      <h1>Search Github Users</h1>
+      <p class="lead">Enter a username to fetch a user profile and repos</p>
+      <input type="text" name="searchUser" id="searchUser" class="form-control" placeholder="GitHub Username...">
+    </div>
+    <br>
+    <div id="profile"></div>
+  </div>
+
+  <footer class="mt-5 p-3 text-center bg-light">
+    Github Finder &copy;
+  </footer>
+
+  <script src="github.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>
